@@ -22,7 +22,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css?v=2" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -57,6 +57,24 @@
         },
       };
     </script>
+    <style>
+  .footer .footer-wrap-index {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: 1160px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  @media (max-width: 650px) {
+    .footer .footer-wrap-index {
+      padding-left: 18px !important;
+      padding-right: 18px !important;
+    }
+  }
+</style>
   </head>
   <body class="font-sans antialiased">
     <div class="topbar">
@@ -844,9 +862,6 @@
 
   <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
 
-          <!-- Honeypot spam protection -->
-          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-
           <div>
             <label for="company" class="block text-sm font-semibold text-slate-700 mb-2">
               Company Name
@@ -944,7 +959,7 @@
 
     </main>
      <footer class="footer">
-      <div class="footer-container">
+      <div class="footer-wrap-index">
         <div class="footer-grid">
           <div>
             <img
